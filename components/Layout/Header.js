@@ -1,5 +1,5 @@
-import Logo from '../brand/Logo';
-import Nav from '../ui/Nav';
+import Logo from '../Brand/Logo';
+import Nav from '../UI/Nav';
 
 export default function Header() {
   return (
