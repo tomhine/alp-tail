@@ -10,11 +10,9 @@ export default function Home() {
     winWidth <= 425
       ? 'hero-img-mobile-425.jpg'
       : 'woman-skeletal-hand-top-pink-bg.jpg';
-  const heroImgWidth = winWidth <= 425 ? 425 : 2400;
-  const heroImgHeight = winWidth <= 425 ? 637 : 1600;
 
   return (
-    <div className="">
+    <div className="flex flex-col md:gap-4 items-center">
       <Head>
         <title>alp</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,13 +20,11 @@ export default function Home() {
       <InfoBar />
       <HeroImage
         src={`/${heroImgSrc}`}
-        width={heroImgWidth}
-        height={heroImgHeight}
         alt="a dressed human"
         link="#"
         text="do this thing"
       />
-      <Main>
+      <Main className="mt-2 space-x-4">
         <h2 className="text-xl font-medium text-gray-800">
           Popular Categories
         </h2>
